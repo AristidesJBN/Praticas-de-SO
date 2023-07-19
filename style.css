@@ -15,10 +15,13 @@ background-color: black;
 .container button {
   width: 95%;
   padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+  background-color: yellow;
+  color: black;
+  border: 1px solid whitesmoke;
   cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+
 }
 
 H2 {
@@ -31,16 +34,21 @@ H2 {
   margin-top: -27%;
   margin-left: 33%;
   text-align: left;
-  width: 475px;
+  width: 580px;
 }
 
 p{
   background-color: red;
   border: 1px solid whitesmoke;
   margin: 0px;
+  padding: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 23px;
 }
 
 .alocado {
   background-color: rgb(21, 255, 0);
   border: 1px solid whitesmoke;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
 }
