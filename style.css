@@ -1,7 +1,15 @@
+body {
+background-color: black;
+}
+
 .container {
-  width: 380px;
-  padding: 10px;
-  border: 1px solid #000000;
+  width: 340px;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 3px;
+  padding-bottom: 17px;
+  border: 1px solid whitesmoke;
+  background-color: black;
 }
 
 .container button {
@@ -13,10 +21,26 @@
   cursor: pointer;
 }
 
-.textomedico {
+H2 {
   font-family: 'Times New Roman', Times, serif;
+  color: white
 }
 
-#resultado2 {
-  text-align: center;
+#result {
+  font-size: 20px;
+  margin-top: -27%;
+  margin-left: 33%;
+  text-align: left;
+  width: 475px;
+}
+
+p{
+  background-color: red;
+  border: 1px solid whitesmoke;
+  margin: 0px;
+}
+
+.alocado {
+  background-color: rgb(21, 255, 0);
+  border: 1px solid whitesmoke;
 }
