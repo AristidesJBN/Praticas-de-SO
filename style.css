@@ -1,0 +1,22 @@
+.container {
+  width: 380px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.container button {
+  width: 95%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.textomedico {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#resultado2 {
+  text-align: center;
+}
