@@ -18,3 +18,19 @@
       }
     }    
   }
+
+  function round() {
+
+  }
+  
+  function priority() {
+
+  }
+
+  function best() {
+
+  }
+  
+  function dynamic() {
+
+  }
