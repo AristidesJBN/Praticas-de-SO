@@ -34,6 +34,7 @@ H2 {
   margin-left: 33%;
   text-align: left;
   width: 580px;
+  color: white;
 }
 
 p{
@@ -43,6 +44,7 @@ p{
   padding: 1px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 23px;
+  color:black;
 }
 
 .alocado {
