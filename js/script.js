@@ -36,7 +36,7 @@
       for (let p=0; p<=3; p++){
         for (let r=0; r<=3; r++){
           cp[r] = pa[p]-10
-          resultHTML.innerHTML += `<p class="p${p}">pa:${pa} cp: ${cp}</p>`
+          resultHTML.innerHTML += `<p class="p${p}">pa:${pa[p]} cp: ${cp[r]}</p>`
         }
       }
     }
