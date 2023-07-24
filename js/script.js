@@ -11,7 +11,10 @@
 
     for (let i=0; i<=6; i++){
       if (valordoprocesso > memoria[i]){
-          resultHTML.innerHTML += `<p>A memória-${i} de tamanho ${memoria[i]}MB não alocou o processo</p>`  
+          resultHTML.innerHTML += `<p>A memória-${i} de tamanho ${memoria[i]}MB não alocou o processo</p>` 
+          if (i == 6){
+            resultHTML.innerHTML += `<p class="naoalocado">Não existe memória capaz de alocar o processo de ${valordoprocesso}MB</p>` 
+          }
       }else{
           resultHTML.innerHTML += `<p class="alocado">A memória-${i} de tamanho ${memoria[i]}MB conseguiu alocar o processo</p>`
         i = 7
