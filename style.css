@@ -31,7 +31,7 @@ H2 {
 #result {
   font-size: 20px;
   margin-top: -20%;
-  margin-left: 20%;
+  margin-left: 35%;
   text-align: left;
   width: 580px;
   color: white;
@@ -66,7 +66,8 @@ p{
   border: 1px solid whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
-  width: 80px;
+  width: 140px;
+  display: inline-block;
 }
 
 .p1 {
@@ -74,14 +75,16 @@ p{
   border: 1px solid whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
-  width: 80px;
+  width: 140px;
+  display: inline-block;
 }
 .p2 {
   background-color: rgb(0, 255, 106);
   border: 1px solid whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
-  width: 80px;
+  width: 140px;
+  display: inline-block;
 }
 
 .p3 {
@@ -89,5 +92,6 @@ p{
   border: 1px solid whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 22px;
-  width: 80px;
+  width: 140px;
+  display: inline-block;
 }
