@@ -54,9 +54,42 @@ function priority() {
 }
 
 function best() {
+  var valordoprocesso = prompt("Qual o tamanho do processo?") //coleta valor da variável
+  result = valordoprocesso;
+  const resultElement = document.getElementById("result"); //toma referencia da linha 23 do código HTML para a próxima linha
+  resultElement.innerHTML = `Tamanho do processo: ${result}MB`; //"cola" esse texto direto no HTML
+  var ap; // AP == Alocation Position
+  var sap = 100; // SA == Save Alocation Position
+
+  let resultHTML = document.getElementById("result") //toma referencia da linha 23 do código HTML para os paragrafos do laço à seguir
+
+  for (let i=0; i<=6; i++){ //laço de 7 repetições pois a array possui 7 indices | [0, 1, 2, 3, 4, 5, 6] = 7
+    if (valordoprocesso > memoria[i]){ //valida se a memória NÃO suporta aquele processo
+        if (i == 6){ //valida que não conseguiu alocar em nenhum
+          resultHTML.innerHTML += `<p class="naoalocado">Não existe memória capaz de alocar o processo de ${valordoprocesso}MB</p>` 
+        }
+    }else{ 
+      if (sap > memoria[i]){
+        sap = memoria[i]
+        ap = i
+    }
+  } //Esse laço com essas condições, resumidamente coloca o processo no primeiro espaço de memória que ele encontra, tal qual o metodo first-fit.
+  if (i == 6){
+    for (let i=0; i<=6; i++){
+      if (i == ap){
+        resultHTML.innerHTML += `<p class="best">A memória-${i} de tamanho ${memoria[i]}MB alocou o processo</p>`
+      }else{
+        resultHTML.innerHTML += `<p>A memória-${i} de tamanho ${memoria[i]}MB não alocou o processo</p>` 
+      }
+    }
+  }
+}
+}
+
+function preemptive() {
 
 }
 
 function dynamic() {
-
+  
 }
