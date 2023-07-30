@@ -50,8 +50,33 @@ function round() {
 }
 
 function priority() {
+    const processos = [];
+    const n = prompt(`Qual a quantidade de processos?`);
 
-}
+    for (i = 0; i < n; i++) {
+      var te = Number(prompt(`Qual o tempo de execução do processo ${i+1}?`));
+      var pr = Number(prompt(`Qual a prioridade do processo ${i+1}?`));
+      processos[i] = {tempoExecucao: te, prioridade: pr }
+    }
+
+    processos.sort((a, b) => a.prioridade - b.prioridade); //Ordenar do menor pro maior
+
+    let tempoTotalExecucao = 0;
+    let tempoTotalEspera = 0;
+
+    for (i = 0; i < n; i++) {
+      const processo = processos[i];
+      tempoTotalEspera += tempoTotalExecucao; //"armazena" os valores somando consigo mesmo
+      tempoTotalExecucao += processo.tempoExecucao; // //
+    }
+
+    const tempoMedioEspera = tempoTotalEspera / n; //Média do tempo
+
+    const resultHTML = document.getElementById("result"); //toma referencia da linha 23 do código HTML para os parágrafos que representam os processos
+    resultHTML.innerHTML = 
+    `<p class="p0">Tempo total de execução: ${tempoTotalExecucao}</p>
+    <p class="p0">Tempo médio de espera: ${tempoMedioEspera}</p>`;
+  }
 
 function best() {
   var valordoprocesso = prompt("Qual o tamanho do processo?") //coleta valor da variável
