@@ -282,5 +282,5 @@ function dynamic() {
       console.log(imprimirCP.dyProcess)
     }
   }
-  } //Esse conjunto de laços dividem cada processo pelo mesmo tempo de alocação enquanto ativos em partes iguais, assim como o escalonamento round-robin.
+  }
 
