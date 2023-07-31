@@ -23,6 +23,21 @@ background-color: black;
   font-size: larger;
 }
 
+.container a {
+  text-decoration: none;
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 77px;
+  padding-right: 78px;
+  background-color: yellow;
+  color: black;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
 H2 {
   font-family: 'Times New Roman', Times, serif;
   color: white
@@ -30,7 +45,7 @@ H2 {
 
 #result {
   font-size: 20px;
-  margin-top: -20%;
+  margin-top: -30%;
   margin-left: 35%;
   text-align: left;
   width: 580px;
